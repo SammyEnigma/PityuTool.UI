@@ -58,10 +58,8 @@ namespace PityuTool.UI.Views
 
         private void EnableProperty(IDictionary properties, string propertyName)
         {
-            PropertyDescriptor propertyDescriptor = TypeDescriptor.CreateProperty(typeof(PityuComponentDesigner), (PropertyDescriptor)properties[propertyName],
-         new Attribute[]
-           { BrowsableAttribute.Yes
-           });
+            PropertyDescriptor propertyDescriptor = TypeDescriptor.CreateProperty(typeof(PityuComponentDesigner),
+                (PropertyDescriptor)properties[propertyName], new Attribute[] { BrowsableAttribute.Yes });
 
             properties[propertyName] = propertyDescriptor;
         }
@@ -69,3 +67,4 @@ namespace PityuTool.UI.Views
 
     }
 }
+
