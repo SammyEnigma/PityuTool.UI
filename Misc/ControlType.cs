@@ -1,0 +1,41 @@
+﻿namespace PityuTool.UI.Misc
+{
+    //
+    //Summary: WINFORM CONTROLS ENUM
+    //
+    // 
+    public enum ControlType
+    {
+        Form,
+        Panel,
+        Button,
+        DataGridView,
+        ComboBox,
+        CheckBox,
+        CheckedListBox,
+        Label,
+        LinkLabel,
+        ListView,
+        ListBox,
+        ContextMenuStrip,
+        DateTimePicker,
+        FlowLayoutPanel,
+        GroupBox,
+        SplitContainer,
+        TabControl,
+        TableLayoutPanel,
+        MenuStrip,
+        StatusStrip,
+        ToolStrip,
+        ToolStripContainer,
+        MaskedTextBox,
+        MonthCalendar,
+        PictureBox,
+        ProgressBar,
+        RadioButton,
+        RichTextBox,
+        TextBox,
+        ToolTip,
+        TreeView
+    }
+}
