@@ -38,7 +38,7 @@ namespace PityuTool.UI.Service
                 baseRegion.Translate(borderLayerData.BorderSize, borderLayerData.BorderSize);
                 borderRegion.Exclude(baseRegion);
                 control.Region = borderRegion;
-
+                control.BackColor = borderLayerData.Color;
 
                 baseRegion.Dispose();
             }

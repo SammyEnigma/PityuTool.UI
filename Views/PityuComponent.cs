@@ -4,6 +4,7 @@ using PityuTool.UI.Repository;
 using PityuTool.UI.Service;
 using System.ComponentModel;
 using System.ComponentModel.Design;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Design;
 using System.Windows.Forms;
@@ -23,7 +24,7 @@ namespace PityuTool.UI.Views
         private GeneralLayerData generalLayerData;
         private ShadowLayerData shadowLayerData;
 
-
+        private Color borderColor;
         private byte blur;
         private byte radius;
         private bool radiusEnabled;
@@ -171,9 +172,30 @@ namespace PityuTool.UI.Views
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         [Category("Border")]
+        [RefreshProperties(RefreshProperties.All)]
         [DisplayName("Color of the border")]
         [Browsable(false)]
-        public Color BorderColor { get; set; }
+        public Color BorderColor
+        {
+            get
+            {
+                return borderColor;
+            }
+            set
+            {
+                if (borderColor != value)
+                {
+                    borderColor = value;
+                    if (borderLayerData != null)
+                    {
+                        borderLayerData.Color = borderColor;
+                        context.Refresh();
+                    }
+                }
+
+            }
+
+        }
 
 
 

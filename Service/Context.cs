@@ -108,7 +108,6 @@ namespace PityuTool.UI.Service
         {
             SetEventClient();
             GenerateLayout();
-
         }
 
     }
