@@ -1,5 +1,8 @@
 # PityuTool.UI
-Component for borderless windows forms
+
+![Nuget](https://img.shields.io/nuget/v/PityuTool.UI?color=green&style=for-the-badge)  ![Nuget](https://img.shields.io/nuget/dt/PityuTool.UI?style=for-the-badge)\
+Component for borderless windows forms 
+
 
 ### Overview
 
