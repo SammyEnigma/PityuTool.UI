@@ -28,7 +28,7 @@ Component for borderless windows forms
 
 #### Limitations 
 Previous version(1.0.0) make controls transparent by mouse, but this(1.1.4) use another approach, this is the reason for the resizing limitations:
-just pure form is resizeable, exactly parts of form that not cover another control.
+just pure form is resizeable, exactly parts of form that does not cover another control.
 Drawing of the shadow is not perfect, and in my opinion the rounded shape is ugly.
 
 #### Dependencies
